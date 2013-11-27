@@ -1,0 +1,12 @@
+<ivy-module version="2.0">
+	<info organisation="com.cloudmunch" module="JavaInstrument" />
+	<dependencies>
+		<dependency org="org" name="ant" rev="1.8.1" />
+		<dependency org="cloudbox" name="commons-cli" rev="1.2" />
+		<dependency org="org" name="commons-io" rev="2.1" />
+		<dependency org="org" name="commons-lang" rev="2.4" />
+		<dependency org="cloudbox" name="emma" rev="2.0" />
+		<dependency org="cloudbox" name="json" rev="1.0" />
+		<dependency org="cloudbox" name="wildcard" rev="1.0" />
+	</dependencies>
+</ivy-module>

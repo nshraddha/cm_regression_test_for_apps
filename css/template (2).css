@@ -1,0 +1,302 @@
+#doc {
+    margin: auto; /* center in viewport */
+    width: 970px; /* fix page width */
+    background: #efefef;
+}
+
+#main .content, #hd .content, #ft .content {
+    padding: 10px 10px 10px 28px;
+}
+
+.thumb-captions .yui3-u-1-3 {
+    vertical-align: bottom;
+}
+
+#main .yui3-u-1-2,
+#more .yui3-u-1-4 {
+    vertical-align: middle;
+}
+
+.advertisement .yui3-g,
+#more {
+    text-align: center; /* horizontally center content */
+}
+
+#more ul,table th {
+    text-align: left; /* reset for content */
+}
+
+.advertisement .align-stub {
+    /* empty stub used to fix the parent height and vertically align */
+    height: 200px;
+}
+
+.advertisement .yui3-u-1-2,
+.advertisement .align-stub {
+    vertical-align: middle; /* vertically center content */
+}
+
+/* content presentation (completely arbitrary, remove or customize) */
+
+#hd, .content, #more {
+    border: 1px solid #CECECE;
+}
+
+#hd h1 {
+    margin: 10px 0;
+}
+
+.content {
+    border-top: 0;
+}
+
+.content p, .content li {
+    padding: 0.5em 1em;
+}
+
+#main .thumb-captions {
+    text-align: center;
+}
+
+#main .thumb-captions a {
+    background: #ddd;
+    border: 1px solid #000;
+    display: block;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#main .thumb-captions img {
+    border: 1px solid #000;
+    margin: 0.5em auto;
+    display: block;
+}
+
+#top-stories {
+    background: #dcdcdc;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+}
+
+#top-stories ol {
+    background: #dcdcdc;
+    margin: 0 0 0 3.5em;
+}
+
+#top-stories li {
+    list-style-type: decimal;
+}
+
+#top-stories li a {
+    margin-left: -1em; /* collapse some space between list marker and content */
+}
+
+#extra .advertisement {
+    background: #666;
+    color: #fff;
+}
+
+#more {
+    background: #ccc;
+    margin-top: 1em;
+}
+
+#more ul {
+    padding: 0.5em 0;
+}
+
+#more li {
+    list-style-type: disc;
+    margin: 0 0 0 2.5em;
+}
+
+#more li a {
+    font: 83% tahoma;
+}
+
+#ft {
+    text-align: center;
+}
+
+#hd,table tr:nth-child(2n+1) td,table tr:nth-child(2n+1) td table tr td {
+    background-color: blanchedalmond;
+}
+
+#nav {
+    float: right;
+    width: 100%;
+}
+
+#nav ul {
+    float: right;
+}
+
+#ft p, #nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    list-style-type: none;
+    float: left;
+}
+
+#nav  li a:hover, .active{
+    background: #FFFFFF!important;
+    color: #87CC1C!important;
+}
+
+.active{
+    opacity: 0.5;
+}
+
+#nav li ul, #nav li ul li span {
+    display: none;
+}
+#nav li ul{
+    position: absolute;
+}
+
+#nav li ul li span {
+   border-left: 5px solid #CECECE;
+
+}
+
+#nav li ul li{
+    float: none;
+    display: list-item;
+}
+
+#nav  li:hover ul, #nav  li ul li:hover span{
+    display: block;
+}
+
+/*#nav li:hover .active{
+    background: none repeat scroll 0 0 #87CC1C!important;
+    color: #FFFFFF!important;
+}*/
+
+
+#nav li a {
+    border-top: 0 none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#nav .content {
+    border-right: 0;
+}
+
+
+input[type=submit], input[type=button], #nav li a,ui-icon,.add_field,.delete-field, .ui-icon-prev, .ui-icon-next, .edit_operator, .delete_operator{
+    cursor: pointer;
+}
+
+form h4{
+    margin: 5px 0;
+    padding: 0;
+}
+input[type=submit], input[type=button], #nav li a {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 5px 15px;
+    vertical-align: middle;
+    text-decoration: none;
+
+}
+
+input[type=submit], input[type=button], #nav li a,.ui-icon-add, .ui-icon-prev, .ui-icon-next, .ui-icon-edit {
+    background-color:#87CC1C;
+}
+
+input[type=text], input[type=password],select {
+    height: 28px;
+    vertical-align: middle;
+    width: 100%;
+}
+input[type=text], input[type=password]{
+    padding: 0 5px;
+}
+select{
+    padding: 4px 0;
+}
+input[type=text], input[type=password], input[type=submit], input[type=button], #nav li a, select{
+    border: 1px solid #CECECE;
+}
+.float_right{
+ float: right;
+}
+#main .content .notification {
+    text-align: center;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+#main .content h3 {
+    margin: 2px 0;
+}
+
+#main .content .form_content {
+    margin-left: 17%;
+}
+
+#main .content .row {
+    margin-bottom: 10px;
+}
+
+.display_none {
+    display: none;
+}
+
+.ui-icon {
+    text-indent: -99999px;
+    overflow: hidden;
+    background-image: url("../image/ui-icons_ffffff_256x240.png");
+    font-weight: bold;
+}
+
+.ui-icon-add {
+    background-position: -286.5px -127px;
+}
+
+.ui-icon-delete{
+    background-position: -318.5px -126.5px;
+    background-color: #ff0000;
+}
+.ui-icon-next {
+    background-position: -366.5px -190px;;
+}
+
+.ui-icon-prev {
+    background-position: -398.5px -190px;;
+}
+
+table td {
+    word-break: break-all !important;
+}
+
+table tr:nth-child(2n) td, table tr:nth-child(2n) td table tr td {
+    background-color: #ffffff;
+}
+
+tbody th {
+    background-color: #87CC1C !important;
+    color: #fff !important;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.success {
+    color: #87CC1C;
+}
+.ui-icon-edit{
+    background-position: -62px -110px;
+}

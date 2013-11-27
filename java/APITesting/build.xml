@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="APITesting" xmlns:ivy="antlib:org.apache.ivy.ant">
+	
+	<import file="../../Build/CBAppBuildHelper.xml"/>
+	<ivy:settings file="../../Build/ivysettings.xml"/>
+
+	<property environment="env"/>
+	<property name="debuglevel" value="source,lines,vars"/>
+	<property name="JavaTarget" value="1.6"/>
+	<property name="JavaSource" value="1.6"/>
+	<property name="target" value="${basedir}/target"/>
+	<property name="bin" value="${target}/classes"/>
+
+	<path id="APITesting.classpath">
+		<pathelement location="lib/urlhelper-1.0.jar"/>
+		<pathelement location="lib/commons-io-2.1.jar"/>
+		<pathelement location="lib/json-1.0.jar"/>
+		<pathelement location="../ArgumentParser/target/ArgumentParser.jar"/>
+	</path>
+
+	<target name="init" depends="resolve" description="">
+		<mkdir dir="${target}"/>
+		<mkdir dir="${bin}"/>
+		<copy includeemptydirs="false" todir="${bin}">
+			<fileset dir="cloudbox">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+		<echo message="Test"/>
+		<ant inheritall="false" inheritrefs="false" antfile="../ArgumentParser/build.xml" target="build" />
+		<ant inheritall="false" inheritrefs="false" antfile="../MapperParser/build.xml" target="build" />
+	</target>
+
+	<target name="resolve" description="--> retrieve dependencies with ivy">
+		<ivy:retrieve />
+	</target>
+
+	<target name="clean" description="">
+		<delete dir="${bin}"/>
+		<delete dir="${target}"/>
+	</target>
+
+	<target depends="clean" name="cleanall"/>
+
+	<target depends="build-project, jar, cloudbox.cbapp.buildhelper.copyToTarget" name="build"/>
+
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}"/>
+		<javac debug="true" includeantruntime="false" debuglevel="${debuglevel}" destdir="${bin}" source="${JavaSource}" target="${JavaTarget}">
+			<src path="cloudbox"/>
+			<classpath refid="APITesting.classpath"/>
+		</javac>
+	</target>
+
+	<target name="jar" description="">
+		<jar destfile="${target}/${ant.project.name}.jar" compress="yes" basedir="${bin}">
+		</jar>
+	</target>
+
+</project>

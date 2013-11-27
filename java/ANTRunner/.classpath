@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="cloudbox"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/json-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/ant-launcher-1.8.1.jar" sourcepath="E:/Downloads/apache-ant-1.8.2-src.zip"/>
+	<classpathentry kind="lib" path="lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ArgumentParser"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MapperParser"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

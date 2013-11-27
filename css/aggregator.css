@@ -1,0 +1,63 @@
+.ui-widget .ui-widget
+{
+    width: 100%;
+}
+
+.com-head
+{
+    margin: 0 0 15px;
+}
+
+.ui-panelgrid
+{
+    background: #fff;
+}
+
+.ui-widget-content
+{
+    border: none;
+}
+
+.ui-panelgrid td
+{
+    border-style: none;
+}
+
+.ui-inputtextarea
+{
+    width: 100%;
+}
+
+.jgate_client_ip
+{
+    width: 25px;
+    margin: 0 10px 0 0;
+}
+
+
+.ip-range.ui-panel .ui-panel-content
+{
+    padding: 0;
+}
+
+.jgate_client_ip_range
+{
+    width: 148px;
+    height: 80px;
+}
+
+.remove-btns td
+{
+    padding-left: 0;
+}
+
+.com-form-block .inner-med-btn
+{
+    position: relative;
+    left:-40px;
+}
+
+#aggregatorDataTable
+{
+    margin-top: 20px;
+}

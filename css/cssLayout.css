@@ -1,0 +1,136 @@
+
+#top {
+    position: relative;
+    background-color: #036fab;
+    color: white;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    width: 960px;
+}
+
+#bottom {
+    position: relative;
+    background-color: #c2dfef;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+    width: 960px;
+}
+
+#left {
+    float: left;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 150px;
+}
+
+#right {
+    float: right;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 150px;
+}
+
+.center_content {
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+    width: 960px;
+}
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 0px 170px 0px 170px;
+}
+
+#top a:link, #top a:visited {
+  color: white;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+#top a:link:hover, #top a:visited:hover  {
+  color: black;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+.content_headers{
+    background-color: #B3AEFD;
+    padding: 5px;
+ }
+
+.content_text{
+     padding-left: 15px;
+ }
+ 
+ .headers{
+     color: black;
+     font-weight: bold;
+     padding-bottom: 15px;
+ }
+ 
+ .heasders_small{
+     color: black;
+     font-weight: bold;
+     font-size: 12px;
+     padding-bottom: 15px;
+ }
+ /**
+    publisher / Aggregator Authentication style starts
+ */
+ .command-link-seperater 
+{
+    padding-right: 17px;
+}
+.updateBtn-box
+{
+    padding : 10px 10px 10px 42%;
+    position: relative;
+    float: none;
+    clear: both;
+}
+.search-publisher-button
+{
+    padding: 2px 7px;
+    margin-left: 8px;
+    color: #3399ff;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background: #ced0d1;
+    background: -webkit-linear-gradient(top, #fefefe, #ced0d1);
+    background: -moz-linear-gradient(top, #fefefe, #ced0d1);
+    background: -linear-gradient(top, #fefefe, #ced0d1);
+}
+.input-select-menu
+{
+    float: left;
+    padding: 0px 7px 0px 0px;    
+}
+.inner-container-div
+{
+    width: 70%;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 1px solid #C3C3C3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.inner-container-div #searchPanel {
+    background-color: #E7EFF5;
+    width: 100%;
+}
+.inner-container-div #showPanelOnCriterial {
+    background-color: #E7EFF5;
+    width: 100%;
+}
+/* publisher / Aggregator Authentication style ends */

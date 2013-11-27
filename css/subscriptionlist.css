@@ -1,0 +1,20 @@
+
+#renew-subscription .search-box-holder.ui-panelgrid td.jgate_label_width{
+    padding: 0;
+}
+
+.select-city table
+{
+    float: left;
+}
+
+.search-box-holder.ui-panelgrid .select-city td
+{
+    padding: 0;
+}
+
+.search-box-holder .select-city .ui-widget-content
+{
+    background: transparent;
+}
+

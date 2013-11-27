@@ -1,0 +1,199 @@
+/* journal assignments */
+
+#journal-assignments
+{
+    margin: 20px 0 0;
+}
+
+#journal-assignments form
+{
+    padding: 10px;
+}
+
+#journal-assignments .ui-widget-content
+{
+    padding: 0 0 20px;
+   /** background: #fff;**/
+    border: 0;
+}
+
+#journal-assignments ul
+{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #96b5bd;
+    padding: 0 0 0 10px;
+}
+
+#journal-assignments .ui-tabs .ui-tabs-nav li
+{
+    background: #A8BDC2;
+    border-color: #96B5BD;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 310px;
+}
+
+#journal-assignments .ui-corner-top
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#journal-assignments .ui-tabs .ui-tabs-nav li a
+{
+    float: none;
+}
+
+#journal-assignments .ui-tabs .ui-tabs-nav li:hover
+{
+    box-shadow: 0 1px 0 #FFFFFF inset;
+}
+
+#journal-assignments .ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-tabs-selected
+{
+    background: #fff;
+}
+
+#journal-assignments .ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-tabs-selected
+{
+    top: 2px;
+}
+
+.show-publishers table
+{
+    width: 100%;
+}
+
+.show-publishers .ui-datatable table
+{
+    background: transparent;
+    border: none;
+}
+
+.show-publishers .ui-datatable table input
+{
+    margin: 0 0 0 10px;
+}
+
+.show-publishers .ui-panelgrid td.com-head
+{
+    margin: 0 0 10px;
+    padding: 5px 10px;
+}
+
+.show-publishers .ui-panelgrid td
+{
+    padding: 5px 0 10px 0;
+    border-width: 0;
+}
+
+.show-publishers .ui-panelgrid td.bold
+{
+    padding-bottom: 0;
+}
+
+.show-publishers .ui-inputtext
+{
+    margin: 11px 8px 0 0;
+}
+
+.show-publishers .input-select-menu, .show-publishers .inner-small-btn
+{
+    margin: 10px 0 0 0;
+}
+
+.show-publishers .ui-datatable .ui-datatable-data td, .show-publishers .ui-datatable .ui-datatable-data-empty td
+{
+    border-color: #ccc;
+}
+
+.show-publishers .updateBtn-box
+{
+    text-align: center;
+}
+
+/* manage-mylibrary */
+
+.manage-mylibrary .ui-panelgrid td
+{
+    border-width: 0;
+    padding-left: 0;
+}
+
+.manage-mylibrary .btn
+{
+    margin: 10px 0;
+}
+
+.manage-mylibrary table
+{
+    width: 100%;
+}
+
+#picklist-box
+{
+    padding-left: 0;
+    border-radius: 10px;
+    width: 575px;
+}
+
+#picklist-box table
+{
+    width: 575px;
+    background: #f2f2f2;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#picklist-box table tr
+{
+     border-radius: 10px;
+    overflow: hidden;
+}
+
+#picklist-box table td
+{
+    padding: 10px;
+}
+
+#picklist-box table ul.ui-widget-content
+{
+    width: 240px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#picklist-box table ul.ui-widget-content li
+{
+    border-bottom: 1px solid #e5e5e5;
+    text-indent: 10px;
+    line-height: 20px;
+}
+
+#picklist-box table ul.ui-widget-content li:hover
+{
+    background: #f1f1f1;
+    box-shadow: none;
+}
+
+#picklist-box .ui-widget-header
+{
+    color: #3399FF;
+    background: none;
+    border: none;
+}
+
+.export-panel-group
+{
+    margin: 20px 0 0 0;
+}
+
+.export-panel-group a.btn
+{
+    margin: 0 5px;
+    text-decoration: none;
+}

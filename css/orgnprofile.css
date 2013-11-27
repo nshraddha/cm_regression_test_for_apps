@@ -1,0 +1,45 @@
+
+/* org profile */
+
+#orgn-profile .ui-panelgrid
+{
+    border-collapse: separate;
+}
+
+#orgn-profile .ui-panelgrid td
+{
+    border-width: 0;
+}
+
+#orgn-profile .ui-panelgrid td.width-med
+{
+    width: 16%;
+}
+
+#orgn-profile .ui-panelgrid td.ip-width-adjust
+{
+    width: 20%;
+}
+
+#orgn-profile .remove-btns
+{
+    padding-left: 0;
+}
+
+#orgn-profile .inner-med-btn
+{
+    margin: 0 0 0 -20px;  
+}
+
+#orgn-profile .ip-width-adjust input[type="text"]
+{
+    margin: 0 10px 0 0;
+    width: 25px;
+}
+
+#orgn-profile .ip-width-adjust .ui-widget-content
+{
+    border: none;
+    padding: 0;
+}
+

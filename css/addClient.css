@@ -1,0 +1,83 @@
+
+.ui-panelgrid
+{
+    background: #fff;
+}
+
+.ui-widget-content
+{
+    border: none;
+}
+
+.ui-panelgrid td
+{
+    border-style: none;
+}
+
+.ui-button-icon-only
+{
+    height: 22px;
+    margin-left: -1px;
+    padding: 0;
+    position: relative;
+    top: 3px;
+    width: 20px;
+}
+
+.ui-widget-content .valign-top label
+{
+    float: left;
+    line-height: 22px;
+    padding: 0 4px 0 0;
+}
+
+.ui-panelgrid td.with-separator
+{
+    border-left: 1px solid #D9E8FC;
+    border-right: 1px solid #D9E8FC;
+}
+
+.ui-panelgrid td.with-right-separator
+{
+    border-right: 0px solid #D9E8FC;
+    color: #3399FF;
+}
+
+.ui-panelgrid.ui-widget.with-right-separator
+{
+    width: 445px;
+}
+
+.ui-inputtextarea
+{
+    width: 100%;
+}
+
+.jgate_client_ip
+{
+    width: 25px;
+    margin: 0 10px 0 0;
+}
+
+
+.ip-range.ui-panel .ui-panel-content
+{
+    padding: 0;
+}
+
+.jgate_client_ip_range
+{
+    width: 148px;
+    height: 80px;
+}
+
+.remove-btns td
+{
+    padding-left: 0;
+}
+
+.com-form-block .inner-med-btn
+{
+    position: relative;
+    left:-40px;
+}

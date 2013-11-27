@@ -1,0 +1,73 @@
+#main .content .notification {
+    text-align: center;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+#main .content h3 {
+    margin: 2px 0;
+}
+
+#main .content .form_content {
+    margin-left: 17%;
+}
+
+#main .content .row {
+    margin-bottom: 10px;
+}
+
+.display_none {
+    display: none;
+}
+
+.ui-icon {
+    text-indent: -99999px;
+    overflow: hidden;
+    background-image: url("../image/ui-icons_ffffff_256x240.png");
+    font-weight: bold;
+}
+
+.ui-icon-add {
+    background-position: -286.5px -127px;
+}
+
+.ui-icon-delete{
+    background-position: -318.5px -127px;
+    background-color: #ff0000;
+}
+.ui-icon-next {
+    background-position: -366.5px -190px;;
+}
+
+.ui-icon-prev {
+    background-position: -398.5px -190px;;
+}
+
+table td {
+    word-break: break-all !important;
+}
+
+table tr:nth-child(2n) td, table tr:nth-child(2n) td table tr td {
+    background-color: #ffffff;
+}
+
+tbody th {
+    background-color: #87CC1C !important;
+    color: #fff !important;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.success {
+    color: #87CC1C;
+}
+.ui-icon-edit{
+background-position: -62px -110px;
+}

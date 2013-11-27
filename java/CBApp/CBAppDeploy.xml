@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cloudbox.cbapp.deploy" default="deploy" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<!--This prperty is set using builder-->
+	<!-- <property name="environment" value="ci" /> -->
+
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+	<if>
+		<equals arg1="${environment}" arg2="ci" />
+		<then>
+			<ivy:settings file="../../Build/ivysettings.xml" />
+			<property name="relativeBaseDir" value="${basedir}/.." />
+		</then>
+		<else>
+			<ivy:settings file="ivysettings.xml" />
+			<property name="relativeBaseDir" value="${basedir}" />
+
+		</else>
+	</if>
+
+	<property name="sharedjars" value="${basedir}/sharedjars/" />
+	<property name="App1" value="${basedir}/App1/" />
+	<!-- PMD / CPD -->
+	<property name="App2" value="${basedir}/App2/" />
+	<!-- Findbugs -->
+	<property name="App3" value="${basedir}/App3/" />
+	<!-- PHP Instrument -->
+	<property name="App4" value="${basedir}/App4/" />
+	<!-- HTML Validator -->
+	<property name="App5" value="${basedir}/App5/" />
+	<!-- CBRemote -->
+	<property name="App6" value="${basedir}/App6/" />
+	<!-- PHPCoverage -->
+	<property name="App7" value="${basedir}/App7/" />
+	<!-- JSP Literal Check (C Based) -->
+	<property name="App8" value="${basedir}/App8/" />
+	<!-- Java Instrument -->
+	<property name="App9" value="${basedir}/App9/" />
+	<!-- Java Coverage -->
+	<property name="App10" value="${basedir}/App10/" />
+	<!-- Issue Stats -->
+	<property name="App11" value="${basedir}/App11/" />
+	<!-- CMPMD -->
+	<property name="App12" value="${basedir}/App12/" />
+	<!-- MavenBuilder -->
+	<property name="App13" value="${basedir}/App13/" />
+	<!-- CopyToWindows -->
+	<property name="App14" value="${basedir}/App14/" />
+	<!-- Hunchlite -->
+	<property name="App15" value="${basedir}/App15/" />
+	<!-- DotNetRunner -->
+	<property name="App16" value="${basedir}/App16/" />
+	<!-- JSValidator -->
+	<property name="App17" value="${basedir}/App17/" />
+	<!-- CloudWatch -->
+	<property name="App18" value="${basedir}/App18/" />
+	<!-- FinacleSourceCheck -->
+	<property name="App19" value="${basedir}/App19/" />
+	<!-- RubyValidator (Flog and Flay Scripts) -->
+	<property name="App20" value="${basedir}/App20/" />
+	<!-- RubyDeploy (Deploy Scripts) -->
+	<property name="App21" value="${basedir}/App21/" />
+	<!-- PHP Code Sniffer -->
+	<property name="App22" value="${basedir}/App22/" />
+	<!-- Java Check Style -->
+	<property name="App23" value="${basedir}/App23/" />
+	<!-- Java Custom App -->
+	<property name="App24" value="${basedir}/App24/" />
+	<!-- ANTRunner -->
+	<property name="App25" value="${basedir}/App25/" />
+	<!-- DBEvolver -->
+	<property name="App26" value="${basedir}/App26/" />
+	<!-- JavaRunner -->
+	<property name="App27" value="${basedir}/App27/" />
+	<!-- SeleniumRunner -->
+	<property name="App28" value="${basedir}/App28/" />
+	<!-- PythonRunner -->
+	<property name="App29" value="${basedir}/App29/" />
+	<!-- JUnitRunner -->
+	<property name="App30" value="${basedir}/App30/" />
+	<!-- SeleniumRunnerWithInstanceLaunch -->
+	<property name="App31" value="${basedir}/App31/" />
+	<!-- Tomcat Services App -->
+	<property name="App32" value="${basedir}/App32/" />
+	<!-- Trigger CI Job App -->
+	<property name="App33" value="${basedir}/App33/" />
+	<!-- Update Property App -->
+	<property name="App34" value="${basedir}/App34/" />
+	<!-- Install NodeJs -->
+	<property name="App35" value="${basedir}/App35/" />
+	<!-- New relic app -->
+	<property name="App36" value="${basedir}/App36/" />
+	<!-- nagios -->
+
+	<target name="deploy2" description="">
+		<ivy:retrieve organisation="org" module="ant" revision="1.8.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant-junit" revision="1.8.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant-junit4" revision="1.8.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant-launcher" revision="1.8.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+	</target>
+
+
+	<target name="deploy" description="" depends="">
+		<mkdir dir="${sharedjars}" />
+		<ivy:retrieve organisation="amazon" module="aws-java-sdk" revision="1.3.12" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="asm" module="asm" revision="3.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="xstream" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="selenium" revision="2.25" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="httpclient" revision="4.2.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="httpcore" revision="4.2.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="1lineserver-common" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="1lineserver-web" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="urlhelper" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="jargs" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="commons-beanutils" revision="1.8.3" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="google-collections" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="checkstyle" revision="5.5" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="antlr" revision="2.7.7" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="pmd" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="cpd" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="xml-apis" revision="1.3.02" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="xmlparserapis" revision="2.6.2" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="xom" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="log4j" revision="1.2.16" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="client" module="rhino" revision="1.6R7" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="commons-httpclient" module="commons-httpclient" revision="3.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="db" module="ojdbc" revision="1.4" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="db" module="mysql-connector-java" revision="5.1.6" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="dom4j" module="dom4j" revision="1.6.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="icu4j" module="icu4j" revision="2.6.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jcraft" module="jsch" revision="0.1.44" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="junit" module="junit" revision="4.4" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="javacc" module="javacc" revision="4.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jaxen" module="jaxen" revision="1.1.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jdom" module="jdom" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant" revision="1.8.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant-launcher" revision="1.8.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.4" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-logging" revision="1.1.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-codec" revision="1.3" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-exec" revision="1.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant-testutil" revision="1.7.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="rhino" module="rhino" revision="1.7" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="saxon" module="saxon" revision="9.1.0.8" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="saxon" module="saxon-dom" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="xalan" module="xalan" revision="2.6.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="xerces" module="xercesimpl" revision="2.9.1" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="sinetfactory" revision="1.0" inline="true" pattern="${sharedjars}/[artifact]-[revision].[ext]" />
+
+
+		<mkdir dir="${App7}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App7}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="parsejsp" revision="9.1" inline="true" pattern="${App7}/parsejsp" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.1" inline="true" pattern="${App7}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App7}/libjsonobject.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmrulescommon" revision="1.0" inline="true" pattern="${App7}/libcmrulescommon.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmhunch" revision="1.0" inline="true" pattern="${App7}/libcmhunch.so" />
+		<ivy:retrieve organisation="cloudmunch" module="jspchk" revision="4.0" inline="true" pattern="${App7}/jspchk" />
+		<ivy:retrieve organisation="cloudmunch" module="jspcustomchkrules" revision="2.0" inline="true" pattern="${App7}/jspcustomchkrules.json" />
+		<ivy:retrieve organisation="cloudmunch" module="getbasedir" revision="1.0" inline="true" pattern="${App7}/getbasedir" />
+		<ivy:retrieve organisation="cloudmunch" module="jspsplchkrules" revision="1.0" inline="true" pattern="${App7}/jspsplchkrules.json" />
+		<ivy:retrieve organisation="cloudmunch" module="jspi18nchkrules" revision="1.0" inline="true" pattern="${App7}/jspi18nchkrules.json" />
+		<ivy:retrieve organisation="cloudmunch" module="jspcustomchkconfig" revision="3.0" inline="true" pattern="${App7}/jspcustomchkconfig.json" />
+		<ivy:retrieve organisation="cloudmunch" module="jspi18nchkconfig" revision="3.0" inline="true" pattern="${App7}/jspi18nchkconfig.json" />
+		<ivy:retrieve organisation="cloudmunch" module="jspsplchkconfig" revision="3.0" inline="true" pattern="${App7}/jspsplchkconfig.json" />
+		<chmod perm="0755" file="${App7}/json2nv" />
+		<chmod perm="0755" file="${App7}/parsejsp" />
+		<chmod perm="0755" file="${App7}/getbasedir" />
+		<chmod perm="0755" file="${App7}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App7}/libcmhunch.so" />
+		<chmod perm="0755" file="${App7}/libjsonobject.so" />
+		<chmod perm="0755" file="${App7}/libcmrulescommon.so" />
+		<chmod perm="0755" file="${App7}/jspchk" />
+		<chmod perm="0755" file="${App7}/jspcustomchkrules.json" />
+		<chmod perm="0755" file="${App7}/jspsplchkrules.json" />
+		<chmod perm="0755" file="${App7}/jspi18nchkrules.json" />
+		<chmod perm="0755" file="${App7}/jspcustomchkconfig.json" />
+		<chmod perm="0755" file="${App7}/jspi18nchkconfig.json" />
+		<chmod perm="0755" file="${App7}/jspsplchkconfig.json" />
+
+		<mkdir dir="${App18}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2csv" revision="2.1" inline="true" pattern="${App18}/json2csv" />
+		<ivy:retrieve organisation="finacle" module="finscrchksample" revision="1.0" inline="true" pattern="${App18}/finscrchksample.sh" />
+		<ivy:retrieve organisation="finacle" module="finscrchk" revision="1.1" inline="true" pattern="${App18}/finscrchk" />
+		<ivy:retrieve organisation="finacle" module="finaclescrchk" revision="1.0" inline="true" pattern="${App18}/finaclescrchk.sh" />
+		<chmod perm="0755" file="${App18}/finaclescrchk.sh" />
+		<chmod perm="0755" file="${App18}/json2csv" />
+		<chmod perm="0755" file="${App18}/finscrchk" />
+		<chmod perm="0755" file="${App18}/finscrchksample.sh" />
+
+		<mkdir dir="${App7}" />
+		<ivy:retrieve organisation="cloudmunch" module="enUS_aff" revision="1.0" inline="true" pattern="${App7}/enUS_aff" />
+		<ivy:retrieve organisation="cloudmunch" module="enUS_dic" revision="1.0" inline="true" pattern="${App7}/enUS_dic" />
+		<ivy:retrieve organisation="cloudmunch" module="i18nrule" revision="4.0" inline="true" pattern="${App7}/i18nrule" />
+		<ivy:retrieve organisation="cloudmunch" module="i18nsample" revision="4.0" inline="true" pattern="${App7}/i18nsample" />
+		<ivy:retrieve organisation="cloudmunch" module="json2csv" revision="2.1" inline="true" pattern="${App7}/json2csv" />
+		<ivy:retrieve organisation="cloudmunch" module="jspi18n" revision="4.1" inline="true" pattern="${App7}/jspi18n" />
+		<ivy:retrieve organisation="cloudmunch" module="jspsplchk" revision="1.1" inline="true" pattern="${App7}/jspsplchk" />
+		<ivy:retrieve organisation="cloudmunch" module="splchkconf" revision="1.1" inline="true" pattern="${App7}/splchkconf" />
+		<ivy:retrieve organisation="cloudmunch" module="splchksample" revision="1.0" inline="true" pattern="${App7}/splchksample" />
+		<ivy:retrieve organisation="cloudmunch" module="splchkrule" revision="1.0" inline="true" pattern="${App7}/splchkrule" />
+		<ivy:retrieve organisation="cloudmunch" module="parsejsp" revision="4.0" inline="true" pattern="${App7}/parsejsp" />
+
+		<mkdir dir="${App1}" />
+		<copy file="${relativeBaseDir}/CPDExtension/target/CPDExtension.jar" todir="${App1}">
+		</copy>
+		<copy file="${relativeBaseDir}/PMDExtension/target/PMDExtension.jar" todir="${App1}">
+		</copy>
+		<copy file="${relativeBaseDir}/MapperParser/target/MapperParser.jar" todir="${App1}" />
+		<!-- <ivy:retrieve organisation="cbapp" module="cloudboxPMD" revision="1.0" 
+			inline="true" pattern="${App1}/[artifact]-[revision].[ext]" /> <ivy:retrieve 
+			organisation="cbapp" module="CPDExtension" revision="1.0" inline="true" pattern="${App1}/[artifact]-[revision].[ext]" 
+			/> -->
+
+		<mkdir dir="${App2}" />
+		<ivy:retrieve organisation="asm" module="asm" revision="3.3" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="asm" module="analysis" revision="3.3" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="asm" module="commons" revision="3.3" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="asm" module="tree" revision="3.3" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="asm" module="util" revision="3.3" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="asm" module="xml" revision="3.3" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="bcel" module="bcel" revision="1.0" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App3}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="dom4j" module="dom4j" revision="1.6.1" inline="true" pattern="${App1}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="findbugs" module="findbugs" revision="2.0" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="findbugs" module="ant" revision="1.0" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jaxen" module="jaxen" revision="1.1.1" inline="true" pattern="${App1}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jcip" module="annotation" revision="1.0" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jdepend" module="jdepend" revision="2.9" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="jFormatString" revision="1.0" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="java" module="jsr" revision="305" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="yjp" module="controller-api" revision="1.0" inline="true" pattern="${App2}/[artifact]-[revision].[ext]" />
+
+
+		<mkdir dir="${App3}" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App3}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App3}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App3}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="wildcard" revision="1.0" inline="true" pattern="${App3}/[artifact]-[revision].[ext]" />
+		<!--ivy:retrieve organisation="cbapp" module="PHPInstrument" revision="1.0" 
+			inline="true" pattern="${App3}/[artifact]-[revision].[ext]" / -->
+		<copy file="${relativeBaseDir}/PHPInstrument/target/PHPInstrument.jar" todir="${App3}">
+		</copy>
+
+
+		<mkdir dir="${App4}" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App4}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App4}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="ecs" revision="1.4.2" inline="true" pattern="${App4}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="jolene-core" revision="0.9" inline="true" pattern="${App4}/[artifact]-[revision].[ext]" />
+		<!--ivy:retrieve organisation="cbapp" module="HTMLValidator" revision="1.0" 
+			inline="true" pattern="${App4}/[artifact]-[revision].[ext]" / -->
+		<copy file="${relativeBaseDir}/HTMLValidator/target/HTMLValidator.jar" todir="${App4}">
+		</copy>
+
+
+		<mkdir dir="${App5}" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App5}/[artifact]-[revision].[ext]" />
+		<!--ivy:retrieve organisation="cbapp" module="CBRemote" revision="1.0" 
+			inline="true" pattern="${App5}/[artifact]-[revision].[ext]" /> <ivy:retrieve 
+			organisation="cbapp" module="TCP" revision="1.0" inline="true" pattern="${App5}/[artifact]-[revision].[ext]" 
+			/ -->
+		<copy file="${relativeBaseDir}/CBRemote/target/CBRemote.jar" todir="${App5}">
+		</copy>
+		<copy file="${relativeBaseDir}/TCP/target/TCP.jar" todir="${App5}">
+		</copy>
+
+		<mkdir dir="${App6}" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.4" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="htmllexer" revision="1.0" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="htmlparser" revision="1.0" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="scp" revision="1.0" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jcraft" module="jsch" revision="0.1.44" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="log4j" revision="1.2.16" inline="true" pattern="${App6}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/PHPCoverage/target/PHPCoverage.jar" todir="${App6}">
+		</copy>
+
+
+		<mkdir dir="${App8}" />
+		<ivy:retrieve organisation="org" module="ant" revision="1.8.1" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="emma" revision="2.0" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="wildcard" revision="1.0" inline="true" pattern="${App8}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/JavaInstrument/target/JavaInstrument.jar" todir="${App8}">
+		</copy>
+
+		<mkdir dir="${App9}" />
+
+		<ivy:retrieve organisation="org" module="ant" revision="1.8.1" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="emma" revision="2.0" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="wildcard" revision="1.0" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="scp" revision="1.0" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="log4j" revision="1.2.16" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="jcraft" module="jsch" revision="0.1.44" inline="true" pattern="${App9}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/JavaCoverage/target/JavaCoverage.jar" todir="${App9}" />
+		<copy file="${relativeBaseDir}/MapperParser/target/MapperParser.jar" todir="${App9}" />
+
+		<mkdir dir="${App10}" />
+
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${App10}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App10}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App10}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/IssueStats/target/IssueStats.jar" todir="${App10}" />
+		<copy file="${relativeBaseDir}/MapperParser/target/MapperParser.jar" todir="${App10}" />
+
+		<mkdir dir="${App11}" />
+		<copy file="${relativeBaseDir}/CMPMD/target/CMPMD.jar" todir="${App11}" />
+		<copy file="${relativeBaseDir}/MapperParser/target/MapperParser.jar" todir="${App11}" />
+
+		<mkdir dir="${App12}" />
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${App12}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App12}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App12}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-exec" revision="1.1" inline="true" pattern="${App12}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App12}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/MavenBuilder/target/MavenBuilder.jar" todir="${App12}" />
+
+		<mkdir dir="${App13}" />
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${App13}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App13}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App13}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="ant" revision="1.8.1" inline="true" pattern="${App13}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/CopyFilesWindows/target/CopyFilesWindows.jar" todir="${App13}" />
+		<copy file="${relativeBaseDir}/TCP/target/TCP.jar" todir="${App13}" />
+
+		<mkdir dir="${App14}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App14}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="parsejavajson" revision="1.0" inline="true" pattern="${App14}/parsejavajson" />
+		<ivy:retrieve organisation="cloudmunch" module="hunchpackageview" revision="1.0" inline="true" pattern="${App14}/hunchpackageview.sh" />
+		<ivy:retrieve organisation="cloudmunch" module="parsejava" revision="3.2" inline="true" pattern="${App14}/parsejava" />
+		<ivy:retrieve organisation="cloudmunch" module="parsejsp" revision="9.0" inline="true" pattern="${App14}/parsejsp" />
+		<ivy:retrieve organisation="cloudmunch" module="getbasedir" revision="1.0" inline="true" pattern="${App14}/getbasedir" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmhunch" revision="1.0" inline="true" pattern="${App14}/libcmhunch.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App14}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmrulescommon" revision="1.0" inline="true" pattern="${App14}/libcmrulescommon.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App14}/libjsonobject.so" />
+		<chmod perm="0755" file="${App14}/json2nv" />
+		<chmod perm="0755" file="${App14}/parsejavajson" />
+		<chmod perm="0755" file="${App14}/hunchpackageview.sh" />
+		<chmod perm="0755" file="${App14}/parsejava" />
+		<chmod perm="0755" file="${App14}/parsejsp" />
+		<chmod perm="0755" file="${App14}/getbasedir" />
+		<chmod perm="0755" file="${App14}/libcmhunch.so" />
+		<chmod perm="0755" file="${App14}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App14}/libjsonobject.so" />
+		<chmod perm="0755" file="${App14}/librulescommon.so" />
+
+		<!--
+		<mkdir dir="${App15}" />
+		<copy file="${relativeBaseDir}/DotNetRunner/target/DotNetRunner.jar" todir="${App15}" />
+
+		<mkdir dir="${App16}" />
+		<copy file="${relativeBaseDir}/JSValidator/target/JSValidator.jar" todir="${App16}" />
+		-->
+
+		<!--
+		<mkdir dir="${App17}" />
+		<ivy:retrieve organisation="cloudbox" module="commons-cli" revision="1.2" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudbox" module="json" revision="1.0" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-lang" revision="2.4" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-io" revision="2.1" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-exec" revision="1.1" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="amazon" module="aws-java-sdk" revision="1.3.12" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-codec" revision="1.3" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="org" module="commons-logging" revision="1.1.1" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="httpclient" revision="4.2.1" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="httpcore" revision="4.2.1" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<ivy:retrieve organisation="cloudmunch" module="xstream" revision="1.0" inline="true" pattern="${App17}/[artifact]-[revision].[ext]" />
+		<copy file="${relativeBaseDir}/CloudWatch/target/CloudWatch.jar" todir="${App17}" />
+		-->
+
+		<mkdir dir="${App19}" />
+		<copy file="${relativeBaseDir}/RubyValidator/flay_json.rb" todir="${App19}" />
+		<copy file="${relativeBaseDir}/RubyValidator/flog_json.rb" todir="${App19}" />
+
+		<!--
+		<mkdir dir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/bundle_json.rb" todir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/database_configuration.rb" todir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/database_creation.rb" todir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/migrate_json.rb" todir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/ruby_deployer.rb" todir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/server_configuration.rb" todir="${App20}" />
+		<copy file="${relativeBaseDir}/RubyDeployer/scripts/nginx.conf" todir="${App20}" />
+		-->
+
+		<!--
+		<mkdir dir="${App21}" />
+		<copy file="${relativeBaseDir}/PHPCodeSniffer/target/PHPCodeSniffer.jar" todir="${App21}" />
+		-->
+
+		<!--
+		<mkdir dir="${App22}" />
+		<copy file="${relativeBaseDir}/CheckStyleRunner/target/CheckStyleRunner.jar" todir="${App22}" />
+		-->
+
+		<mkdir dir="${App23}" />
+		<ivy:retrieve organisation="cloudmunch" module="javacustchk" revision="3.0" inline="true" pattern="${App23}/javacustchk" />
+		<ivy:retrieve organisation="cloudmunch" module="javacustchkrule" revision="1.3" inline="true" pattern="${App23}/javacustchkrule.json" />
+		<ivy:retrieve organisation="cloudmunch" module="javacustconfig" revision="1.0" inline="true" pattern="${App23}/javacustconfig.json" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App23}/libjsonobject.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App23}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmhunch" revision="1.0" inline="true" pattern="${App23}/libcmhunch.so" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App23}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="parsejava" revision="3.2" inline="true" pattern="${App23}/parsejava" />
+		<chmod perm="0755" file="${App23}/javacustchk" />
+		<chmod perm="0755" file="${App23}/javacustchkrule.json" />
+		<chmod perm="0755" file="${App23}/javacustconfig.json" />
+		<chmod perm="0755" file="${App23}/libjsonobject.so" />
+		<chmod perm="0755" file="${App23}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App23}/libcmhunch.so" />
+		<chmod perm="0755" file="${App23}/json2nv" />
+		<chmod perm="0755" file="${App23}/parsejava" />
+
+		<!--
+		<mkdir dir="${App24}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App24}" />
+		<copy file="${relativeBaseDir}/ANTRunner/target/ANTRunner.jar" todir="${App24}" />
+		<copy file="${relativeBaseDir}/MapperParser/target/MapperParser.jar" todir="${App24}" />
+		-->
+
+		<!--
+		<mkdir dir="${App25}" />
+		<copy file="${relativeBaseDir}/DBEvolver/target/DBEvolver.jar" todir="${App25}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App25}" />
+
+		<mkdir dir="${App26}" />
+
+		<copy file="${relativeBaseDir}/JavaRunner/target/JavaRunner.jar" todir="${App26}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App26}" />
+
+		<mkdir dir="${App27}" />
+		<copy file="${relativeBaseDir}/JavaRunner/target/JavaRunner.jar" todir="${App27}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App27}" />
+
+		<mkdir dir="${App28}" />
+		<copy file="${relativeBaseDir}/PythonRunner/target/PythonRunner.jar" todir="${App28}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App28}" />
+
+		<mkdir dir="${App29}" />
+		<copy file="${relativeBaseDir}/JavaRunner/target/JavaRunner.jar" todir="${App29}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App29}" />
+		-->
+
+		<mkdir dir="${App31}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App31}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="starttomcat" revision="3.0" inline="true" pattern="${App31}/starttomcat" />
+		<ivy:retrieve organisation="cloudmunch" module="stoptomcat" revision="3.0" inline="true" pattern="${App31}/stoptomcat" />
+		<ivy:retrieve organisation="cloudmunch" module="startjboss" revision="3.0" inline="true" pattern="${App31}/startjboss" />
+		<ivy:retrieve organisation="cloudmunch" module="stopjboss" revision="3.0" inline="true" pattern="${App31}/stopjboss" />
+		<ivy:retrieve organisation="cloudmunch" module="startapache" revision="4.0" inline="true" pattern="${App31}/startapache" />
+		<ivy:retrieve organisation="cloudmunch" module="stopapache" revision="3.0" inline="true" pattern="${App31}/stopapache" />
+		<ivy:retrieve organisation="cloudmunch" module="startmysql" revision="4.0" inline="true" pattern="${App31}/startmysql" />
+		<ivy:retrieve organisation="cloudmunch" module="stopmysql" revision="5.0" inline="true" pattern="${App31}/stopmysql" />
+		<ivy:retrieve organisation="cloudmunch" module="parsedepserver" revision="1.0" inline="true" pattern="${App31}/parsedepserver" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App31}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App31}/libjsonobject.so" />
+		<chmod perm="0755" file="${App31}/json2nv" />
+		<chmod perm="0755" file="${App31}/starttomcat" />
+		<chmod perm="0755" file="${App31}/stoptomcat" />
+		<chmod perm="0755" file="${App31}/startjboss" />
+		<chmod perm="0755" file="${App31}/stopjboss" />
+		<chmod perm="0755" file="${App31}/startapache" />
+		<chmod perm="0755" file="${App31}/stopapache" />
+		<chmod perm="0755" file="${App31}/startmysql" />
+		<chmod perm="0755" file="${App31}/stopmysql" />
+		<chmod perm="0755" file="${App31}/parsedepserver" />
+		<chmod perm="0755" file="${App31}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App31}/libjsonobject.so" />
+
+		<!--
+		<mkdir dir="${App32}" />
+		<copy file="${relativeBaseDir}/TriggerCIJob/target/TriggerCIJob.jar" todir="${App32}" />
+		<copy file="${relativeBaseDir}/ArgumentParser/target/ArgumentParser.jar" todir="${App32}" />
+		-->
+
+		<mkdir dir="${App33}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="2.0" inline="true" pattern="${App33}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="libparseproperty" revision="3.0" inline="true" pattern="${App33}/libparseproperty.so" />
+		<ivy:retrieve organisation="cloudmunch" module="updateproperty" revision="3.0" inline="true" pattern="${App33}/updateproperty" />
+		<ivy:retrieve organisation="cloudmunch" module="updatepropertyfile" revision="3.0" inline="true" pattern="${App33}/updatepropertyfile.sh" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App33}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App33}/libjsonobject.so" />
+		<chmod perm="0755" file="${App33}/json2nv" />
+		<chmod perm="0755" file="${App33}/libparseproperty.so" />
+		<chmod perm="0755" file="${App33}/updateproperty" />
+		<chmod perm="0755" file="${App33}/updatepropertyfile.sh" />
+		<chmod perm="0755" file="${App33}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App33}/libjsonobject.so" />
+
+		<mkdir dir="${App34}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App34}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="installnodejs" revision="4.0" inline="true" pattern="${App34}/installnodejs" />
+		<ivy:retrieve organisation="cloudmunch" module="parsedepserver" revision="1.0" inline="true" pattern="${App34}/parsedepserver" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App34}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App34}/libjsonobject.so" />
+		<chmod perm="0755" file="${App34}/json2nv" />
+		<chmod perm="0755" file="${App34}/installnodejs" />
+		<chmod perm="0755" file="${App34}/parsedepserver" />
+		<chmod perm="0755" file="${App34}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App34}/libjsonobject.so" />
+
+		<mkdir dir="${App35}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App35}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="startnewrelic" revision="3.0" inline="true" pattern="${App35}/startnewrelic" />
+		<ivy:retrieve organisation="cloudmunch" module="stopnewrelic" revision="4.0" inline="true" pattern="${App35}/stopnewrelic" />
+		<ivy:retrieve organisation="cloudmunch" module="parsedepserver" revision="1.0" inline="true" pattern="${App35}/parsedepserver" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App35}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App35}/libjsonobject.so" />
+		<chmod perm="0755" file="${App35}/json2nv" />
+		<chmod perm="0755" file="${App35}/startnewrelic" />
+		<chmod perm="0755" file="${App35}/stopnewrelic" />
+		<chmod perm="0755" file="${App35}/parsedepserver" />
+		<chmod perm="0755" file="${App35}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App35}/libjsonobject.so" />
+
+		<mkdir dir="${App36}" />
+		<ivy:retrieve organisation="cloudmunch" module="json2nv" revision="1.0.1" inline="true" pattern="${App36}/json2nv" />
+		<ivy:retrieve organisation="cloudmunch" module="libcmparsedev" revision="4.0" inline="true" pattern="${App36}/libcmparsedev.so" />
+		<ivy:retrieve organisation="cloudmunch" module="libjsonobject" revision="1.1" inline="true" pattern="${App36}/libjsonobject.so" />
+		<ivy:retrieve organisation="cloudmunch" module="parsedepserver" revision="1.0" inline="true" pattern="${App36}/parsedepserver" />
+		<ivy:retrieve organisation="cloudmunch" module="updatenagios" revision="3.0" inline="true" pattern="${App36}/updatenagios" />
+		<ivy:retrieve organisation="cloudmunch" module="libparsenagios" revision="1.0" inline="true" pattern="${App36}/libparsenagios.so" />
+		<ivy:retrieve organisation="cloudmunch" module="managenagioscfg" revision="5.0" inline="true" pattern="${App36}/managenagioscfg.sh" />
+		<ivy:retrieve organisation="cloudmunch" module="installnagios" revision="1.0" inline="true" pattern="${App36}/installnagios.sh" />
+		<ivy:retrieve organisation="cloudmunch" module="commandscfg" revision="2.0" inline="true" pattern="${App36}/commands.cfg" />
+		<ivy:retrieve organisation="cloudmunch" module="hostgroupscfg" revision="1.0" inline="true" pattern="${App36}/hostgroups.cfg" />
+		<ivy:retrieve organisation="cloudmunch" module="hostscfg" revision="2.0" inline="true" pattern="${App36}/hosts.cfg" />
+		<ivy:retrieve organisation="cloudmunch" module="localhostcfg" revision="1.0" inline="true" pattern="${App36}/localhost.cfg" />
+		<ivy:retrieve organisation="cloudmunch" module="nagioscfg" revision="1.0" inline="true" pattern="${App36}/nagios.cfg" />
+		<ivy:retrieve organisation="cloudmunch" module="servicescfg" revision="1.0" inline="true" pattern="${App36}/services.cfg" />
+		<chmod perm="0755" file="${App36}/json2nv" />
+		<chmod perm="0755" file="${App36}/parsedepserver" />
+		<chmod perm="0755" file="${App36}/libcmparsedev.so" />
+		<chmod perm="0755" file="${App36}/libjsonobject.so" />
+		<chmod perm="0755" file="${App36}/libparsenagios.so" />
+		<chmod perm="0755" file="${App36}/updatenagios" />
+		<chmod perm="0755" file="${App36}/managenagioscfg.sh" />
+		<chmod perm="0755" file="${App36}/installnagios.sh" />
+
+	</target>
+
+</project>
+

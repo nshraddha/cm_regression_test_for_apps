@@ -1,0 +1,109 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:Student.cs" caret="495" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="1095" scrollPosition="0|18" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="747" scrollPosition="0|5" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:Student.cs" caret="755" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:Student.cs" caret="414" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:Student.cs" caret="702" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:Student.cs" caret="599" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:Student.cs" caret="495" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="1506" scrollPosition="0|27" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="1703" scrollPosition="0|42" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="463" scrollPosition="0|0" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="2470" scrollPosition="0|51" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="2188" scrollPosition="0|51" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="2057" scrollPosition="0|66" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="3266" scrollPosition="0|12" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="3591" scrollPosition="0|93" />
+      <File id="0EEDFF1E-B99F-450A-9FD0-DD54DDEA59EE/f:ListViewBYME.cs" caret="3007" scrollPosition="0|74" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Savebutton" priority="2" />
+      <Item value="true" priority="3" />
+      <Item value="Cancelbutton" priority="2" />
+      <Item value="Updatebutton" priority="2" />
+      <Item value="false" priority="3" />
+      <Item value="string" priority="8" />
+      <Item value="StudentNametextBox" priority="7" />
+      <Item value="ContactNumbertextBox" priority="4" />
+      <Item value="EmailAddresstextBox" priority="4" />
+      <Item value="new" priority="4" />
+      <Item value="Student" priority="4" />
+      <Item value="public" priority="1" />
+      <Item value="this" priority="2" />
+      <Item value="studentName" priority="0" />
+      <Item value="contactNumber" priority="0" />
+      <Item value="emailAddress" priority="0" />
+      <Item value="StudentlistView" priority="7" />
+      <Item value="ListViewItem" priority="6" />
+      <Item value="item" priority="12" />
+      <Item value="studentObj" priority="3" />
+      <Item value="selectedListViewCell" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="selectedStudent" priority="2" />
+      <Item value="selectedRowIndex" priority="1" />
+      <Item value="StudentObj" priority="3" />
+      <Item value="foreach" priority="0" />
+      <Item value="selctedItem" priority="1" />
+      <Item value="MakeOperationForSaveButton" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="Visible" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="14" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FinalListView.Student">
+      <Item value="StudentName" priority="0" />
+      <Item value="ContactNumber" priority="0" />
+      <Item value="EmailAddress" priority="0" />
+      <Item value="StudentName_" priority="2" />
+      <Item value="ContactNumber_" priority="2" />
+      <Item value="EmailAddress_" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem">
+      <Item value="Tag" priority="3" />
+      <Item value="Text" priority="1" />
+      <Item value="SubItems" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem+ListViewSubItemCollection">
+      <Item value="Add" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView">
+      <Item value="Items" priority="2" />
+      <Item value="SelectedItems" priority="1" />
+      <Item value="SelectedIndices" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView+ListViewItemCollection">
+      <Item value="Add" priority="1" />
+      <Item value="Remove" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

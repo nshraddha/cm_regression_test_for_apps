@@ -1,0 +1,170 @@
+/* Override some defaults */
+html, body {
+    background-color: #eee;
+}
+/*body {
+    padding-top: 40px; *//* 40px to make the container go all the way to the bottom of the topbar *//*
+}*/
+.container > footer p {
+    text-align: center; /* center align it with the container */
+}
+/* Top Bar */
+
+
+
+/* The white background content wrapper */
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+    -webkit-border-radius: 0 0 6px 6px;
+       -moz-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+            box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+    background-color: #f5f5f5;
+    padding: 20px 20px 10px;
+    margin: -20px -20px 20px;
+}
+
+.top-header, .menu-bar {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    margin: 0 -20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.top-header-title {
+    padding-top:15px;
+}
+
+.top-header-nav {
+    padding-top:35px;
+    font-size: 0.9em;
+}
+
+.top-header-nav li {
+    color: #52AD32;
+    font-weight: bold;
+}
+
+.top-header-nav li span {
+    display: block;
+    float: none;
+    line-height: 19px;
+    padding: 10px 10px 11px;
+}
+.top-header-nav a, .top-header-nav a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.menu-bar {
+    background-color: #52AD32;
+    color: #eeeeee;
+    padding: 16px 0 1px 25px;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin-left: 0;
+}
+.menu-bar li {
+    display: inline;
+    margin-right: 25px;
+}
+.menu-bar img {
+    vertical-align:middle;
+    padding: 0 3px 5px 0;
+}
+.menu-bar a {
+    color: #ffffff;
+}
+
+.side-nav {
+    list-style: none;
+    margin-left: 0;
+}
+
+.side-nav li a {
+    display: block;
+    width: 140px;
+    color: #000000;
+    background-color: #dddddd;
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.side-nav li a.active {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* Give a quick and non-cross-browser friendly divider */
+.content .span4 {
+    margin-left: 0;
+    padding-left: 19px;
+    border-left: 1px solid #eee;
+}
+
+.topbar .btn {
+    border: 0;
+}
+
+.topnav-title span {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.4em;
+    height: 60px;
+}
+
+label {
+    width:150px;
+    float:left;
+    padding-right: 10px;
+}
+
+.form-err-msg{
+    color: #B94A48; /* color error message after form elements to bootstrap color */
+    padding-left: 10px;
+}
+
+.span-format
+{
+    text-align: left;
+    display: table-cell;
+    min-width: 10px;
+    padding-right: 10px;
+}
+
+.inline-form {
+    margin:0;
+}
+
+.help-indent{
+    padding: 0px 0px 0px 170px;
+}
+
+.ajax-success{
+    color: #46a546;
+}
+.ajax-error{
+    color: #9d261d;
+}
+
+.admin-dash-nav {
+    display: block;
+    text-align: center;
+}
+
+.admin-dash-nav:link {text-decoration: none}
+.admin-dash-nav:visited {text-decoration: none}
+.admin-dash-nav:active {text-decoration: none}
+.admin-dash-nav:hover {text-decoration: none; background-color:#fbfbfb;}

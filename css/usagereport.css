@@ -1,0 +1,45 @@
+
+.com-head
+{
+    margin: 0 0 15px;
+}
+
+.ui-panelgrid, #renewSubscriptionForm
+{
+    background: #fff;
+}
+
+.ui-widget-content
+{
+    border: none;
+}
+
+.ui-panelgrid td
+{
+    border-style: none;
+}
+
+#renewSubscriptionForm, #serviceReportPanel, #rightPanelGrid
+{
+    width: 100%;
+}
+
+#getReportButton
+{
+    margin: 10px 10px 10px 0;
+}
+
+#downloadCsvLink, #downloadLink
+{
+    margin: 10px 10px 10px 0;
+    text-decoration: none;
+    color: #3399FF;
+    float: right;
+}
+
+.srl-no
+{
+    width: 20px;
+    text-align: center;
+        
+}

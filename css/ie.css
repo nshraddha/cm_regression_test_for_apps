@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+input[type="radio"],input[type="checkbox"] 
+{
+    background: none;
+}
+
+.ui-widget-content
+{
+    font-size: 12px;
+}
+
+.search-section form input[type='submit']
+{
+	height: 35px;
+	outline: none;
+}
+
+.ie-top-margin
+{
+	margin-top: 50px;
+}
+
+.ip-listbox
+{
+	margin-left: 150px;
+}

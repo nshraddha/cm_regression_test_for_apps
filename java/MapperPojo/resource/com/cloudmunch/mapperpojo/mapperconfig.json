@@ -1,0 +1,11 @@
+{
+	"projectexception":[
+		"mapperVersion"
+	],
+	"validcategorylist":[
+		"build",
+		"test",
+		"release",
+		"dev"
+	]
+}
