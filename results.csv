@@ -1,0 +1,5 @@
+TESTCASES;RESULT;
+create_project;PASS;
+create_job;FAIL;
+clone_project;PASS;
+clone_job;FAIL;

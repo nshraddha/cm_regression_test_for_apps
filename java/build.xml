@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="java" default="package" basedir=".">      
+	<target name="package" description="" depends="clean">    
+		<echo message="Executing second target - package."/>
+	</target>
+	<target name="clean" description="">
+		<echo message="Executing first target - clean."/>
+	</target>	
+</project>               
