@@ -1,8 +1,0 @@
-<ivy-module version="2.0">
-	<info organisation="com.cloudbox" module="ArgumentParser" />
-	<dependencies>
-		<dependency org="cloudbox" name="commons-cli" rev="1.2" />
-		<dependency org="cloudbox" name="json" rev="1.0" />
-
-	</dependencies>
-</ivy-module>
