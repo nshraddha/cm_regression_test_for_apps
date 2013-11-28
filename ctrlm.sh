@@ -1,4 +1,3 @@
-
 echo "This is";
 echo "to test";
 echo "the removal of";
