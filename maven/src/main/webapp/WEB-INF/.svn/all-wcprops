@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF
+END
+remoting-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/remoting-servlet.xml
+END
+petstore-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/petstore-servlet.xml
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/struts-config.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/applicationContext.xml
+END
+dataAccessContext-local.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/dataAccessContext-local.xml
+END
+server-config.wsdd
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/server-config.wsdd
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/log4j.properties
+END
+dataAccessContext-jta.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/dataAccessContext-jta.xml
+END
+sql-map-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/sql-map-config.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/web.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jdbc.properties
+END
+mail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/mail.properties
+END

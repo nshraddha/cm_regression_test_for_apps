@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao
+END
+OrderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/OrderDao.java
+END
+AccountDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/AccountDao.java
+END
+CategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/CategoryDao.java
+END
+ItemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ItemDao.java
+END
+ProductDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ProductDao.java
+END

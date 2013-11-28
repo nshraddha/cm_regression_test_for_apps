@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic
+END
+OrderValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic/OrderValidator.java
+END
+AccountValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic/AccountValidator.java
+END
+SendOrderConfirmationEmailAdvice.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic/SendOrderConfirmationEmailAdvice.java
+END
+PetStoreImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic/PetStoreImpl.java
+END
+PetStoreFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic/PetStoreFacade.java
+END
+OrderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/logic/OrderService.java
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts
+END
+EditAccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/EditAccountAction.java
+END
+UpdateCartQuantitiesAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/UpdateCartQuantitiesAction.java
+END
+NewAccountAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/NewAccountAction.java
+END
+ViewOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/ViewOrderAction.java
+END
+ViewCategoryAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/ViewCategoryAction.java
+END
+NewOrderFormAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/NewOrderFormAction.java
+END
+RemoveItemFromCartAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/RemoveItemFromCartAction.java
+END
+BaseAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/BaseAction.java
+END
+ViewProductAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/ViewProductAction.java
+END
+CartActionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/CartActionForm.java
+END
+AccountActionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/AccountActionForm.java
+END
+SecureBaseAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/SecureBaseAction.java
+END
+AddItemToCartAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/AddItemToCartAction.java
+END
+ViewCartAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/ViewCartAction.java
+END
+NewOrderAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/NewOrderAction.java
+END
+EditAccountFormAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/EditAccountFormAction.java
+END
+SearchProductsAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/SearchProductsAction.java
+END
+DoNothingAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/DoNothingAction.java
+END
+ViewItemAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/ViewItemAction.java
+END
+NewAccountFormAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/NewAccountFormAction.java
+END
+ListOrdersAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/ListOrdersAction.java
+END
+SignonAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/SignonAction.java
+END
+BaseActionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/BaseActionForm.java
+END
+OrderActionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/struts/OrderActionForm.java
+END

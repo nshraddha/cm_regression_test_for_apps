@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain
+END
+Product.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/Product.java
+END
+LineItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/LineItem.java
+END
+CartItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/CartItem.java
+END
+Cart.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/Cart.java
+END
+Order.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/Order.java
+END
+Account.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/Account.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/Category.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/domain/Item.java
+END

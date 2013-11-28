@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring
+END
+SignoffController.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/SignoffController.java
+END
+OrderForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/OrderForm.java
+END
+SignonController.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/SignonController.java
+END
+OrderFormController.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/OrderFormController.java
+END
+UpdateCartQuantitiesController.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/UpdateCartQuantitiesController.java
+END
+ViewOrderController.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/ViewOrderController.java
+END
+ViewCategoryController.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/ViewCategoryController.java
+END
+SignonInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/SignonInterceptor.java
+END
+RemoveItemFromCartController.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/RemoveItemFromCartController.java
+END
+ViewProductController.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/ViewProductController.java
+END
+AccountForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/AccountForm.java
+END
+UserSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/UserSession.java
+END
+AccountFormController.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/AccountFormController.java
+END
+ViewCartController.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/ViewCartController.java
+END
+AddItemToCartController.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/AddItemToCartController.java
+END
+ViewItemController.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/ViewItemController.java
+END
+SearchProductsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/SearchProductsController.java
+END
+ListOrdersController.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/web/spring/ListOrdersController.java
+END

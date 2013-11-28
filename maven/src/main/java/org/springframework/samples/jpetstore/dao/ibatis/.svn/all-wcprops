@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis
+END
+MsSqlOrderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/MsSqlOrderDao.java
+END
+SqlMapCategoryDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/SqlMapCategoryDao.java
+END
+SqlMapItemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/SqlMapItemDao.java
+END
+OracleSequenceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/OracleSequenceDao.java
+END
+SqlMapProductDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/SqlMapProductDao.java
+END
+Sequence.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/Sequence.java
+END
+SqlMapSequenceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/SqlMapSequenceDao.java
+END
+SqlMapOrderDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/SqlMapOrderDao.java
+END
+SqlMapAccountDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/java/org/springframework/samples/jpetstore/dao/ibatis/SqlMapAccountDao.java
+END

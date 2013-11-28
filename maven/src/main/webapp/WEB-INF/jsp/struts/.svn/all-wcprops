@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts
+END
+IncludeMyList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/IncludeMyList.jsp
+END
+EditAccountForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/EditAccountForm.jsp
+END
+IncludeAccountFields.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/IncludeAccountFields.jsp
+END
+IncludeQuickHeader.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/IncludeQuickHeader.jsp
+END
+Error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/Error.jsp
+END
+ConfirmOrder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/ConfirmOrder.jsp
+END
+Cart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/Cart.jsp
+END
+SearchProducts.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/SearchProducts.jsp
+END
+NewAccountForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/NewAccountForm.jsp
+END
+ListOrders.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/ListOrders.jsp
+END
+Item.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/Item.jsp
+END
+Checkout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/Checkout.jsp
+END
+ShippingForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/ShippingForm.jsp
+END
+IncludeTop.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/IncludeTop.jsp
+END
+ViewOrder.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/ViewOrder.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/index.jsp
+END
+IncludeBottom.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/IncludeBottom.jsp
+END
+NewOrderForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/NewOrderForm.jsp
+END
+IncludeBanner.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/IncludeBanner.jsp
+END
+Category.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/Category.jsp
+END
+Product.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/Product.jsp
+END
+SignonForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/spring-samples/!svn/ver/118/jpetstore/trunk/org.springframework.samples.jpetstore/src/main/webapp/WEB-INF/jsp/struts/SignonForm.jsp
+END
